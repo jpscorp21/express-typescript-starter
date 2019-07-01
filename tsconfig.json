@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "module": "commonjs", /* El estandar de node para los modulos */
+        "esModuleInterop": true, /* Opcion para los modulos */
+        "allowJs": true, /* Permite la coexistencia de archivos js */
+        "checkJs": true, /* Corrige errores de Javascript */
+        "resolveJsonModule": true, /* Para que incluya los JSON */
+        "baseUrl": ".", /* La raiz */
+        "sourceMap": true, /* Para la depuracion */
+        "moduleResolution": "node", /* Se usaron los modulos de node */
+        "emitDecoratorMetadata": true, /* Para la utilizacion de decoradores */
+        "experimentalDecorators": true,
+        "target": "es6", /* El ecmascript a transpilarse */
+        "outDir": "dist", /* Carpeta de salida */
+        "lib": [
+            "es2015"
+        ],
+        "paths": {
+            "*": [
+                "node_modulse/*", /* Exclusiones */
+                "src/types/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*", /* Archivos a compilarse */
+        "src/**/*.json" /* Incluye los archivos JSON */
+    ]
+}

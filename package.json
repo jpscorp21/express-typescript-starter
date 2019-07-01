@@ -1,0 +1,41 @@
+{
+    "name": "express-starter",
+    "description": "Express con typescript",
+    "version": "0.0.1",
+    "main": "server.js",
+    "keywords": [
+        "api",
+        "express",
+        "typescript",
+        "node"
+    ],
+    "scripts": {
+        "start": "npm run serve",
+        "build": "tsc",
+        "dev": "nodemon ./src/server.js",
+        "serve": "node dist/server.js",
+        "debug": "npm run build && npm run watch-debug",
+        "watch-ts": "tsc -w",
+        "watch-node": "nodemon dist/server.js",
+        "watch-debug": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" \"npm run watch-node\" \"npm run watch-ts\""
+    },
+    "engines": {
+        "node": ">= 8.9.4"
+    },
+    "author": {
+        "name": "Jean Paul Saucedo Gonzalez",
+        "email": "jpscorp21@gmail.com"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.16.4"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.0",
+        "@types/node": "^10.14.10",
+        "concurrently": "^4.1.1",
+        "nodemon": "^1.19.1",
+        "tslint": "^5.18.0",
+        "typescript": "^3.5.2"
+    }
+}

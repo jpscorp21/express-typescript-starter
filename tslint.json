@@ -1,0 +1,71 @@
+{
+    "defaultSeverity": "error",
+    "rules": {
+        "arrow-return-shorthand": true, /* Acortar las funcioens flechas */
+        "class-name": true, /* Nombre correcto de la clase */
+        "comment-format": [
+            true,
+            "check-space"
+        ],
+        "curly": true, /* Para forzar usar {} en las estructuras */
+        "eofline": true, /* Para que termine con una nueva linea */
+        "forin": true,
+        "import-spacing": true,
+        "indent": [
+            true,
+            "spaces"
+        ],
+        "max-line-length": [ // tamaño de una linea de codigo
+            true,
+            140
+        ],
+        "no-console": [false], /* Mostrar la consola */
+        "no-duplicate-super": true,
+        "no-empty": false,
+        "no-empty-interface": true,
+        "no-eval": true, /* No usar el metodo eval */
+        "no-misused-new": true,
+        "no-redundant-jsdoc": true,
+        "no-string-literal": false,
+        "no-var-keyword": true,
+        "quotemark": [true, "single"], /* Comillas simples */
+        "semicolon": [ // Utilizar siempre ;
+            true,
+            "always"
+        ],
+        "triple-equals": [ // Utilizar triple igual
+            true,
+            "allow-null-check"
+        ],
+        "typedef-whitespace": [
+            true,
+            {
+              "call-signature": "nospace",
+              "index-signature": "nospace",
+              "parameter": "nospace",
+              "property-declaration": "nospace",
+              "variable-declaration": "nospace"
+            }
+        ],
+        "variable-name": false,
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type"
+        ],
+        "no-output-on-prefix": true,
+        "use-input-property-decorator": true,
+        "use-output-property-decorator": true,
+        "use-host-property-decorator": true,
+        "no-input-rename": true,
+        "no-output-rename": true,
+        "use-life-cycle-interface": true,
+        "use-pipe-transform-interface": true,
+        "directive-class-suffix": true
+        
+    },
+    "rulesDirectory": []
+}
